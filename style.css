@@ -1,38 +1,71 @@
 html{
 	height:100%;
 	width: 100%;
+
 }
 
 body{
 	margin:auto;
+		position: relative;
+
 }
 
-.header, .main, .footer,.intro,.team{
-	padding:30px 50px 30px 50px;
+.header, .footer,.intro,.team{
+	padding:5%;
 	display:block;
 }
 .header{
-	background-color: #2196F3;
-	color:white;
+	/*background-color: #2196F3;
+	color:white;*/
+	background-color: white;
+	color:black;
+
 }
 .footer{
-	background-color: grey;
-	color:white;
+	background-color: white;
+	
+	/*color:white;*/
+
 }
 
 a,a:link,a:visited
 {
- color:#FFFAFA;
+ color:black;
  text-decoration:none;
 }
-
 
 a:active{
 	font-weight: bold;
 }
 
 .logo{
-	padding-bottom: 10px;
+	display: inline-block;
+	background-image: url(images/logo.png);
+	height:50px;
+	width:333px;
+	background-size: cover;
+	padding-bottom: 5%;
+}
+
+.pink{
+	margin-left:0px;
+	margin-right: 0px;
+	width:100%;
+	height:50%;
+	background-color:#faedef;
+}
+
+.signin{
+	display: inline-block;
+	float:right;
+	
+}
+
+.signin img{
+	content: url("images/profile.png");
+	width:56px;
+	padding-right: 10px;
+
 }
 
 /*
@@ -45,7 +78,7 @@ a:active{
 
 .nav ul{
 	padding:0px;
-
+	padding-top:  20px ;
 }
 
 .nav ul li{
@@ -54,21 +87,6 @@ a:active{
     padding-right: 40px;
 }
 
-.nav, .signin{
-	display: inline-block;
-}
-.signin{
-	float:right;
-	padding-top: 5px;
-}
-
-.signin img{
-	content: url("images/ic_account_circle_white_48dp.png");
-    vertical-align: middle;	
-	width:32px;
-	padding-right: 10px;
-
-}
 
 /*
 	canvas
@@ -76,23 +94,45 @@ a:active{
 canvas{
 
 	border: 1px solid;
-	width: 100%;
-	margin: auto;
-}
-
-.row {
-	padding:30px 35px 30px 35px;
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 100%;
-	display: inline-block;;
+	position: absolute;
+	top:180px;
+	margin-left: 10%;
+	width: 50%;
+	height:300px;
+	background-color: black;
 
 }
+.outer{
+	display: inline-block;
+	width:25%;
+	padding-left: 5%;
+	padding-top: 2%;
+    max-height: 300px;
+    overflow:hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.left{	
+	height: 400px;
+	overflow-y: scroll;
+  
+}
+
+.main{
+	display: inline-block;
+	width:40%;
+
+}
+
 .composition {
-	margin:0px;
-	padding: 0px;
-	height:200px;
+	height:150px;
 	border: 1px solid;
+	margin-bottom: 5%;
+	background-color: black;
 }
 
 /*
@@ -107,7 +147,7 @@ canvas{
 	background-size: cover;
 	height:300px;
 	color:white;
-	;
+	
 
 }
 
@@ -137,6 +177,12 @@ border-radius: 64px;
 	font-weight: bold;
 	font-size: 1.3em;
 	padding-top: 20px;
+}
+
+@media screen and (max-width:520px){
+	.signin{
+		padding-top:25px;
+	}
 }
 
 
