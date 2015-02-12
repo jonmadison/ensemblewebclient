@@ -1,0 +1,142 @@
+html{
+	height:100%;
+	width: 100%;
+}
+
+body{
+	margin:auto;
+}
+
+.header, .main, .footer,.intro,.team{
+	padding:30px 50px 30px 50px;
+	display:block;
+}
+.header{
+	background-color: #2196F3;
+	color:white;
+}
+.footer{
+	background-color: grey;
+	color:white;
+}
+
+a,a:link,a:visited
+{
+ color:#FFFAFA;
+ text-decoration:none;
+}
+
+
+a:active{
+	font-weight: bold;
+}
+
+.logo{
+	padding-bottom: 10px;
+}
+
+/*
+.header{
+		background: url(images/intelcopy.jpg) no-repeat center;
+	background-size: cover;
+	/*height:300px;
+	color:white;
+}*/
+
+.nav ul{
+	padding:0px;
+
+}
+
+.nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.nav, .signin{
+	display: inline-block;
+}
+.signin{
+	float:right;
+	padding-top: 5px;
+}
+
+.signin img{
+	content: url("images/ic_account_circle_white_48dp.png");
+    vertical-align: middle;	
+	width:32px;
+	padding-right: 10px;
+
+}
+
+/*
+	canvas
+*/
+canvas{
+
+	border: 1px solid;
+	width: 100%;
+	margin: auto;
+}
+
+.row {
+	padding:30px 35px 30px 35px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	display: inline-block;;
+
+}
+.composition {
+	margin:0px;
+	padding: 0px;
+	height:200px;
+	border: 1px solid;
+}
+
+/*
+	about page
+*/
+
+.intro{
+	/*
+	margin:auto;
+	width:92%;*/
+	background:url(images/intelcopy1.jpg) no-repeat center;
+	background-size: cover;
+	height:300px;
+	color:white;
+	;
+
+}
+
+.intro .title{
+	width:60%;
+}
+
+.title{
+	padding-bottom: 40px;
+}
+
+.person{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	padding-bottom: 40px;
+}
+.avatar{
+width: 96px;
+height: 96px;
+/*background: url(images/hello.jpg) no-repeat;*/
+background-size: 96px 96px;
+border-radius: 64px;
+
+}
+.name{
+	font-weight: bold;
+	font-size: 1.3em;
+	padding-top: 20px;
+}
+
+
